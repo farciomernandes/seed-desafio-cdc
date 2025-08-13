@@ -8,8 +8,8 @@ export class CreateAuthorDto {
     example: 'John Doe',
     required: true,
   })
-  @IsNotEmpty({ message: ExceptionMessages.isNotEmpty('Nome') })
-  @IsString({ message: ExceptionMessages.isString('Nome') })
+  @IsNotEmpty({ message: ExceptionMessages.isNotEmpty('Name') })
+  @IsString({ message: ExceptionMessages.isString('Name') })
   name: string;
 
   @ApiProperty({

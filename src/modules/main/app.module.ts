@@ -5,6 +5,7 @@ import { MainModule } from '@modules/main/main.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { dataSource } from '@infra/typeorm/datasource.config';
 import { AuthorModule } from '@modules/author/author.module';
+import { CategoryModule } from '@modules/category/category.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { AuthorModule } from '@modules/author/author.module';
     HealthModule,
     MainModule,
     AuthorModule,
+    CategoryModule,
   ],
   controllers: [],
   providers: [],
